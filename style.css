@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    background-color: var(--black-2);
+    transform: all 0.3s linear;
+}
+
+:root{
+    --main:#0C0C0C;
+    --dark-black:#101218;
+    --light-black:#31363F;
+    --black-2:#292828;
+    --black-3: #222831;
+    --red-grad:linear-gradient(to right, #690e63, red);
+    --red-shadow: 0 0 1rem 0.6rem  #e883e1;
+    --white:#fff;
+    --blue-shadow: 0 0 1rem 0.6rem #98c0f0;
+}
+
+button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+/* ====================================
+reusable code
+======================================= */
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column
+}
+
+.flex-centered{
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-five-col{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.section{
+    padding: 5rem;
+}
+
+.container{
+    max-width: 140rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 8rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image:var(--red-grad);
+}
+
+.btn{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+/* ==============================================
+header
+========================================== */
+.header{
+    gap: 2rem;
+    margin: 10rem 0;
+}
+.header span{
+    font-size: 5rem;
+}
+/* =========================================
+calculator box container
+============================================*/
+.calculator-box-container{
+
+    background-color: var(--dark-black);
+    gap: 4rem;
+    padding: 3rem 2rem;
+    width: 90rem;
+}
+
+/* screen container */
+
+.calculator-screen-container{
+    height: 25rem;
+    width: 95%;
+    gap: 0;
+}
+
+.calculator-screen-container input{
+    width: 100%;
+    padding: 0 2rem;
+    color: var(--white);
+}
+
+.calculator-screen-container .calculation-prblm{
+    height: 15rem;
+    background-color: var(--black-3);
+    font-size: 4.6rem;
+}
+
+.calculator-screen-container .calculation-soln{
+    height: 10rem;
+    font-size: 3.9rem;
+    background-color:var(--light-black);
+}
+
+/* butttons container */
+.calculator-btns-container{
+    height: 60rem;
+    width: 95%;
+}
+
+.calculator-box-container .grid-five-col{
+   gap: 2.5rem;
+}
+
+.calculator-btns-container button:not(.arithmetic-btn):hover{
+    box-shadow:var(--blue-shadow);
+}
+
+.arithmetic-btn{
+    background:var(--red-grad);
+    color: var(--white);
+}
+
+.arithmetic-btn:hover{
+    box-shadow:var(--red-shadow);
+}
+
+/* ===================================
+media queries
+======================================== */
+
+@media (max-width:1024px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:850px) {
+    html{
+        font-size: 6px;
+    }
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 3.5px;
+    }
+}

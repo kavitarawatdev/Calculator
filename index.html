@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+     <!-- ========================================================
+     header
+     ============================================================= -->
+    <header class="header flex flex-centered">
+        <h1 class="heading">Calculator</h1> 
+        <span>📱</span> 
+    </header>
+        <!-- ===========================================================
+     calculator box section
+     ================================================================ -->
+     <section class="section calculator-section flex flex-centered">
+        <div class="calculator-box-container flex flex-col flex-centered">
+            <!--=========================================
+             calculator screen
+             ================================================ -->
+             <div class="calculator-screen-container flex flex-col">
+                <input type="text" name="calculation-prblm"  class="calculation-prblm" id="calculation-prblm">
+                <input type="text" name="calculation-soln" class="calculation-soln" id="calculation-soln">
+             </div>
+            <!-- =========================================
+             calculator-btns-container 
+             =============================================-->
+             <div class="calculator-btns-container grid grid-five-col">
+                
+                <button class=" btn" id="open-brac">(</button>
+                <button class=" btn" id="close-brac">)</button>
+                <button class="btn" id="percentage">%</button>
+                <button class="btn" id="delete">DEL</button>
+                <button class="btn" id="reset">AC</button>
+
+                <button class="trigonometry-btn btn" id="sin">sin</button>
+                <button class="number-btn btn" id="one">1</button>
+                <button class="number-btn btn" id="two">2</button>
+                <button class="number-btn btn" id="three">3</button>
+                <button class="arithmetic-btn btn" id="addition">+</button>
+
+                <button class="trigonometry-btn btn" id="cos">cos</button>
+                <button class="number-btn btn" id="four">4</button>
+                <button class="number-btn btn" id="five">5</button>
+                <button class="number-btn btn" id="six">6</button>
+                <button class="arithmetic-btn btn" id="subtraction">-</button>
+                    
+                <button class="trigonometry-btn btn" id="tan">tan</button>
+                <button class="number-btn btn" id="seven">7</button>
+                <button class="number-btn btn" id="eight">8</button>
+                <button class="number-btn btn" id="nine">9</button>
+                <button class="arithmetic-btn btn" id="multiplication">x</button>
+                    
+                <button class="trigonometry-btn btn" id="degree">deg</button>
+                <button class=" btn" id="pie">𝝿</button>
+                <button class="number-btn btn" id="zero">0</button>
+                <button class="number-btn btn" id="decimal">.</button>
+                <button class="arithmetic-btn btn" id="division">÷</button>
+                    
+                <!-- trigonometry-btn -->
+                <button class=" btn" id="radian">rad</button>
+                <button class=" btn" id="factorial">!</button>
+                <button class=" btn" id="sqRoot">√</button>
+                <button class=" btn" id="exponent">^</button>
+                <button class="arithmetic-btn btn" id="equals">=</button>
+             </div>
+        </div>
+     </section>
+</body>
+</html>
